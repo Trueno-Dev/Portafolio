@@ -141,11 +141,27 @@
 
   <footer>
     <p>&copy; 2025 Carlos Flores - Todos los derechos reservados.</p>
+    <a href="https://github.com/trueno-dev" target="_blank" onclick="enviarEvento(event)">Click</a>
   </footer>
 
   <script>
     function mostrarAlerta() {
       alert("¡Gracias por tu interés! Puedes contactarme por correo.");
+    }
+  </script>
+
+  <script>
+    function enviarEvento(e) {
+      e.preventDefault();
+      gtag('event', 'link', {
+        'debug_mode':true,
+        'event_category': 'rrss',
+        'event_label': 'GitHub'
+      });
+
+      setTimeout(() => {
+        window.location.href = e.target.href;
+      }, 300);
     }
   </script>
 
