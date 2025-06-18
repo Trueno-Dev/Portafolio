@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio - Carlos Flores</title>
+  <style>
+    /* RESET BÁSICO */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #00adb5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #007a82;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Carlos Flores</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a mi Portafolio</h2>
+    <p>¡Hola! Soy estudiante de Ingeniería de Sistemas. Aquí encontrarás mis proyectos y más información sobre mí.</p>
+  </section>
+
+  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Soy un apasionado por el desarrollo de software, la inteligencia artificial y el análisis de datos. Actualmente estudio en el quinto ciclo y sigo aprendiendo constantemente nuevas tecnologías.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="project">
+      <h3>Proyecto 1: Sistema de gestión</h3>
+      <p>Aplicación web con login, registro y manejo de usuarios.</p>
+    </div>
+
+    <div class="project">
+      <h3>Proyecto 2: Análisis de accidentes de tránsito</h3>
+      <p>Dashboard interactivo con gráficos usando Python y R Studio.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo o saber más? ¡Escríbeme!</p>
+    <button onclick="mostrarAlerta()">Enviar mensaje</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Carlos Flores - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarAlerta() {
+      alert("¡Gracias por tu interés! Puedes contactarme por correo.");
+    }
+  </script>
+
+</body>
+</html>
