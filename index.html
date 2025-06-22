@@ -86,19 +86,21 @@
     }
   </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMJQNXDNEZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-SMJQNXDNEZ');
-</script>
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MMPD9KZT');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
-
+  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMPD9KZT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <header>
     <h1>Carlos Flores</h1>
     <nav>
@@ -135,35 +137,10 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Quieres trabajar conmigo o saber más? ¡Escríbeme!</p>
-    <button onclick="mostrarAlerta()">Enviar mensaje</button>
+    <p>&copy; 2025 Carlos Flores - Todos los derechos reservados.</p>
+    <p><a href="https://github.com/trueno-dev" target="_blank" id="btn-github">Click</a>Fernando Flores</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Carlos Flores - Todos los derechos reservados.</p>
-    <a href="https://github.com/trueno-dev" target="_blank" onclick="enviarEvento(event)">Click</a>
-  </footer>
-
-  <script>
-    function mostrarAlerta() {
-      alert("¡Gracias por tu interés! Puedes contactarme por correo.");
-    }
-  </script>
-
-  <script>
-    function enviarEvento(e) {
-      e.preventDefault();
-      gtag('event', 'link', {
-        'debug_mode':true,
-        'event_category': 'rrss',
-        'event_label': 'GitHub'
-      });
-
-      setTimeout(() => {
-        window.location.href = e.target.href;
-      }, 300);
-    }
-  </script>
 
 </body>
 </html>
